@@ -1,0 +1,90 @@
+
+
+
+/* uloha 1 */
+.data {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/*
+.data tr > td,
+.data tr > th {
+    padding: 2px;
+    border: 1px solid black;
+}
+*/
+
+.data tr > * {
+    padding: 2px;
+    border: 1px solid black;
+}
+
+/* uloha 2 */
+.data th {
+    background-color: #51a286;
+    color: white;
+}
+
+.data tr > th:first-letter {
+    color: yellow;
+}
+
+/* uloha 3 */
+.data tr:nth-child(2n+1) {
+    background-color: #ececf1;
+}
+
+/* uloha 4 */
+.data tr td:nth-child(2) {
+    text-transform: uppercase;
+}
+
+/* uloha 5 i */
+.data tr:hover {
+    background-color: #a4a4a4;
+}
+
+/* uloha 5 ii */
+.data tr:hover > td:first-child {
+    color: red;
+}
+.data tr > td:first-child:hover {
+    color: black
+}
+
+/* uloha 5 iii */
+
+/* a) Vždy budú zarovnané na stred. */
+.data tr > td:nth-child(4),
+.data tr > td:nth-child(5),
+.data tr > td:nth-child(6) {
+    text-align: center;
+}
+
+/* b) Ak na nich nebude kurzor myši, tak budú mať modré pozadie. */
+.data tr:hover > td:nth-child(4),
+.data tr:hover > td:nth-child(5),
+.data tr:hover > td:nth-child(6) {
+    background-color: cornflowerblue;
+}
+
+.data tr:hover > td:nth-child(4):hover,
+.data tr:hover > td:nth-child(5),
+.data tr:hover > td:nth-child(6) {
+    background-color: cornflowerblue;
+}
+
+
+
+
+
+/*.data tr:hover td:nth-child(5) {*/
+/*    background-color: #a9dca9;*/
+/*}*/
+
+/*.data tr:hover td:nth-child(6) {*/
+/*    background-color: #f8f8a0;*/
+/*}*/
+
+
