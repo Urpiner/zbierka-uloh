@@ -33,11 +33,16 @@
 }
 
 .ball {
+    /* pouzitie iba 1 animacie na .ball */
+
     /*animation-name: mojaAnimaciaY*/
     /*animation-duration: 3.3s;*/
     /*animation-direction: alternate;*/
     /*animation-timing-function: linear;*/
     /*animation-iteration-count: infinite;*/
+
+    /* pouzitie 2 animacii na .ball */
+
     animation-name: mojaAnimaciaY, mojaAnimaciaX;
     animation-duration: 0.6s, 1s;
     animation-direction: alternate, alternate;
