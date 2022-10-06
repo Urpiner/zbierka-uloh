@@ -53,6 +53,11 @@
     color: black
 }
 
+/* uloha 5 ii (alternativne riesenie)*/
+/*.data tr:hover td:first-child:not(:hover) {*/
+/*    color: red;*/
+/*}*/
+
 /* uloha 5 iii */
 
 /* a) Vždy budú zarovnané na stred. */
@@ -69,22 +74,63 @@
     background-color: cornflowerblue;
 }
 
+/* c)Ak bude kurzor myši na niektorom z nich, tak daná bunka bude mať zelené pozadie a bunka (bunky)
+ s číslami za ním budú mať pozadie žlté. Pozor, bunke s odkazom nemeníme farbu pozadia. */
 .data tr:hover > td:nth-child(4):hover,
-.data tr:hover > td:nth-child(5),
-.data tr:hover > td:nth-child(6) {
-    background-color: cornflowerblue;
+.data tr:hover > td:nth-child(5):hover,
+.data tr:hover > td:nth-child(6):hover {
+    background-color: lightgreen;
+}
+
+/*!* toto nie je velmi univerzalne riesenie *!*/
+
+/*.data tr > td:nth-child(4):hover ~ td:nth-child(5),*/
+/*.data tr > td:nth-child(4):hover ~ td:nth-child(6),*/
+/*.data tr > td:nth-child(5):hover ~ td:nth-child(6) {*/
+/*   background-color: #faff59;*/
+/*}*/
+
+/* toto je univerzalne riesenie */
+.data tr td:hover:nth-child(n+4) ~ td:nth-child(-n+6) {
+    background-color: #faff59;
+}
+
+/* uloha 6 */
+.data tr > td:nth-last-child(2),
+.data tr > th:nth-last-child(2)
+{
+    display: none;
+}
+
+/* uloha 7 */
+.data tr a[href^="https"] {
+    color: green;
+}
+
+.data tr a[href^="http"]:not(a[href^="https"]) {
+    color: darkred;
+}
+
+.data tr a:not(a[href^="http"]):not(a[href^="https"]) {
+    color: blue;
+}
+
+.data tr a[href$=".pdf"]:after {
+    content: "(PDF)";
+}
+
+/* uloha 8 */
+.data th {
+    position: sticky;
+    top: -1px;
 }
 
 
 
 
 
-/*.data tr:hover td:nth-child(5) {*/
-/*    background-color: #a9dca9;*/
-/*}*/
 
-/*.data tr:hover td:nth-child(6) {*/
-/*    background-color: #f8f8a0;*/
-/*}*/
+
+
 
 
