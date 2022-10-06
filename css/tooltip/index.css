@@ -1,0 +1,26 @@
+div span.tooltip {
+    color: green;
+    display: none;
+}
+
+div span {
+    font-weight: bold;
+    position: relative;
+}
+
+span:hover + span.tooltip {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+
+    display:block;
+
+    position:absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 1;
+    /*overflow:hidden;*/
+}
+
+
+
