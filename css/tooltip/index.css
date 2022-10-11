@@ -1,26 +1,46 @@
 div span.tooltip {
     color: green;
     display: none;
-}
-
-div span {
-    font-weight: bold;
-    position: relative;
-}
-
-span:hover + span.tooltip {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 10px;
-
-    display:block;
-
-    position:absolute;
-    top: 50%;
-    left: 50px;
-    z-index: 1;
-    /*overflow:hidden;*/
 }
+
+div span.has-tooltip {
+    font-weight: bold;
+    position: relative; /* dolezite -> bude sa potom tooltip umiestnovat k tomuto rodicovskemu elementu ak mu das position: absolute */
+}
+
+div span.has-tooltip:hover > span.tooltip {
+    display:block;
+    position:absolute;
+
+    z-index: 1;
+
+    width: 200px;
+    top: 120%;
+    left: 50px;
+}
+
+/*span:hover + span.tooltip {*/
+/*    border: 1px solid black;*/
+/*    border-collapse: collapse;*/
+/*    padding: 10px;*/
+
+/*    display:block;*/
+
+/*    position:absolute;*/
+
+/*    z-index: 1;*/
+
+/*    width: 120px;*/
+/*    top: 100%;*/
+/*    left: 50%;*/
+/*    margin-left: -60px;*/
+/*    !*overflow:hidden;*!*/
+/*}*/
+
+
 
 
 
